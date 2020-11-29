@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.IO;
@@ -616,7 +616,9 @@ namespace WordSearch
         }
         public static List<String> ImportedWords() //Imports a string[] from a .txt file, creates a List<String>. Adds strings to List<String> if the string[].Length is <= the grid size.
         {
-            string[] importedWords = File.ReadAllLines(@"C:\Users\Craig\VisualStudioCode\WordSearchRef\CommonWords.txt", Encoding.UTF8);
+            string fileName = "CommonWords.txt";
+            string path = Path.Combine(Environment.CurrentDirectory, @"Data\", fileName);
+            string[] importedWords = File.ReadAllLines( path, Encoding.UTF8);
             
             List<String> list = new List<String>();
 
