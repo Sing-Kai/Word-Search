@@ -10,6 +10,7 @@ namespace WordSearch
     {
         public string Word { get; set; }
         public string Coorinates { get; set; }
+        
     }
     class Program
     {
