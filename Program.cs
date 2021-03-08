@@ -6,11 +6,17 @@ using System.Text;
 
 namespace WordSearch
 {
+
+    public class TestingBranch
+    {
+        public int id {get; set;}
+    }
+
     public class WordCoordinates
     {
         public string Word { get; set; }
         public string Coorinates { get; set; }
-        
+
     }
     class Program
     {
